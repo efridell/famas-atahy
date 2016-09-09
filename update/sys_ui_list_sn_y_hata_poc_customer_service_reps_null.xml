@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_y_hata_poc_customer_service_reps" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="sn_y_hata_poc_customer_service_reps" element="NULL" name="sn_y_hata_poc_customer_service_reps" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3d92ac5367112200d412302027415aff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-22 18:01:24</sys_created_on>
+            <sys_id>7192ec5367112200d412302027415a00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-22 18:01:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>csr</element>
+            <list_id display_value="sn_y_hata_poc_customer_service_reps" element="NULL" name="sn_y_hata_poc_customer_service_reps" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3d92ac5367112200d412302027415aff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-22 18:01:24</sys_created_on>
+            <sys_id>f192ec5367112200d412302027415a00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-22 18:01:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>csr.first_name</element>
+            <list_id display_value="sn_y_hata_poc_customer_service_reps" element="NULL" name="sn_y_hata_poc_customer_service_reps" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3d92ac5367112200d412302027415aff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-22 18:01:24</sys_created_on>
+            <sys_id>7592ec5367112200d412302027415a00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-22 18:01:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>csr.last_name</element>
+            <list_id display_value="sn_y_hata_poc_customer_service_reps" element="NULL" name="sn_y_hata_poc_customer_service_reps" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3d92ac5367112200d412302027415aff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-22 18:01:24</sys_created_on>
+            <sys_id>f592ec5367112200d412302027415a00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-22 18:01:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sn_y_hata_poc_customer_service_reps</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-22 18:01:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d92ac5367112200d412302027415aff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_y_hata_poc_customer_service_reps</sys_name>
+            <sys_package display_value="Y Hata POC" source="sn_y_hata_poc">d5b4604367112200d412302027415a19</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Y Hata POC">d5b4604367112200d412302027415a19</sys_scope>
+            <sys_update_name>sys_ui_list_sn_y_hata_poc_customer_service_reps_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-22 18:01:24</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

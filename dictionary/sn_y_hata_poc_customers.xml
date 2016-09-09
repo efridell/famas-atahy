@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Customers" max_length="40" name="sn_y_hata_poc_customers" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" label="Customer Status" max_length="40" name="customer_status" type="choice">
+            <choice>
+                <element label="Current" value="current"/>
+                <element label="Delinquient" value="delinquent"/>
+            </choice>
+        </element>
+        <element label="Customer Name" max_length="128" name="name" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Customer Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Purchase Orders" max_length="40" name="sn_y_hata_poc_purchase_orders" type="collection">
+        <element label="Customer" max_length="32" name="customer" reference="sn_y_hata_poc_customers" type="reference"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="PO Number" max_length="40" name="number" type="string"/>
+        <element choice="3" default="active" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="Active" sequence="0" value="active"/>
+                <element label="In Receiving Hold" sequence="1" value="in_receiving_hold"/>
+                <element label="In SAMAF Review" sequence="2" value="in_samaf_review"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sn_y_hata_poc_purchase_order_items</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Trigger SAMAF</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var percent_change = 0;
+	percent_change = (current.quantity - previous.quantity) / previous.quantity;
+	if (percent_change < 0){percent_change = percent_change * -1;}
+
+	if (percent_change >= 0.1){
+		
+		if (current.pending_samaf == 'null' || current.pending_samaf == ''){
+
+			var gr = new GlideRecord("sn_y_hata_poc_purchase_orders");
+			gr.addQuery("sys_id", current.purchase_order);
+			gr.query();
+			if (gr.next()) {
+				
+				gr.state = 'in_samaf_review';
+				gr.update();
+
+				var new_samaf = new GlideRecord("sn_y_hata_poc_samafs");
+				new_samaf.poi_for_review = current.sys_id;
+				new_samaf.reason_for_samaf = 'Quanity of ' + current.y_hata_item_number.brand + ' ' + current.y_hata_item_number.description + ' has changed from ' + previous.quantity + ' to ' + current.quantity + '.';
+				new_samaf.comments_directions = 'Review current inventory and adjust bulk purchasing as required.';
+				new_samaf.customer = gr.customer;
+				new_samaf.customer_po_number = current.purchase_order;
+				new_samaf.previous_poi_quantity = previous.quantity;
+				new_samaf.requested_poi_quantity = current.quantity;
+				new_samaf.assignment_group = '35af15a767512200d412302027415a38';
+				new_samaf.assigned_to = 'e141245367112200d412302027415a02';
+				new_samaf.csr_name = '5cc2209367112200d412302027415a2e';
+				new_samaf.insert();
+				current.pending_samaf = new_samaf.sys_id;
+			}
+
+		}
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-08-22 19:56:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f4fcbc5767112200d412302027415a0a</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>Trigger SAMAF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Y Hata POC" source="sn_y_hata_poc">d5b4604367112200d412302027415a19</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Y Hata POC">d5b4604367112200d412302027415a19</sys_scope>
+        <sys_update_name>sys_script_f4fcbc5767112200d412302027415a0a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-08-23 17:44:59</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f4fcbc5767112200d412302027415a0a"/>
+</record_update>

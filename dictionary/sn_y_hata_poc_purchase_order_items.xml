@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Purchase Order Items" max_length="40" name="sn_y_hata_poc_purchase_order_items" type="collection">
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="readonly_clickthrough=true" label="Pending SAMAF" max_length="32" name="pending_samaf" reference="sn_y_hata_poc_samafs" type="reference"/>
+        <element attributes="readonly_clickthrough=true" label="Purchase Order" max_length="32" name="purchase_order" reference="sn_y_hata_poc_purchase_orders" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element label="Y Hata Item #" max_length="32" name="y_hata_item_number" reference="sn_y_hata_poc_inventory" type="reference"/>
+        <index name="index">
+            <element name="y_hata_item_number"/>
+        </index>
+        <index name="index2">
+            <element name="purchase_order"/>
+        </index>
+        <index name="index3">
+            <element name="pending_samaf"/>
+        </index>
+    </element>
+</database>

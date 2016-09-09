@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="2f8ba4d367112200d412302027415ab5" sys_domain="global" table="sn_y_hata_poc_purchase_orders" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-22 18:40:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a38ba4d367112200d412302027415ab6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_y_hata_poc_purchase_orders" name="sn_y_hata_poc_purchase_orders" sys_domain="global" view="Default view">2f8ba4d367112200d412302027415ab5</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sn_y_hata_poc_purchase_orders" sys_domain="global" view="Default view">f13628c367112200d412302027415ae8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-22 18:40:34</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_y_hata_poc_purchase_orders</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-22 18:40:34</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f8ba4d367112200d412302027415ab5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_y_hata_poc_purchase_orders</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Y Hata POC" source="sn_y_hata_poc">d5b4604367112200d412302027415a19</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Y Hata POC">d5b4604367112200d412302027415a19</sys_scope>
+            <sys_update_name>sys_ui_form_sections_2f8ba4d367112200d412302027415ab5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-22 18:40:34</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

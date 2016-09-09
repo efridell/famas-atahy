@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="SAMAFs" max_length="40" name="sn_y_hata_poc_samafs" sizeclass="27" type="collection">
+        <element label="Comments/Directions" max_length="1024" name="comments_directions" type="string"/>
+        <element label="CSR Name" max_length="32" name="csr_name" reference="sn_y_hata_poc_customer_service_reps" type="reference"/>
+        <element attributes="readonly_clickthrough=true" label="Customer" max_length="32" name="customer" reference="sn_y_hata_poc_customers" type="reference"/>
+        <element attributes="readonly_clickthrough=true" label="Customer PO #" max_length="32" name="customer_po_number" reference="sn_y_hata_poc_purchase_orders" type="reference"/>
+        <element label="Date Required" max_length="40" name="date_required" type="glide_date"/>
+        <element attributes="readonly_clickthrough=true" label="POI for Review" max_length="32" name="poi_for_review" reference="sn_y_hata_poc_purchase_order_items" type="reference"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Prepared By" max_length="32" name="prepared_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Previous POI Quantity" max_length="40" name="previous_poi_quantity" type="integer"/>
+        <element label="Reason for SAMAF" max_length="256" name="reason_for_samaf" type="string"/>
+        <element default="javascript: current.requested_date = new GlideDateTime().getDisplayValue();" label="Requested Date" max_length="40" name="requested_date" type="glide_date"/>
+        <element label="Requested POI Quantity" max_length="40" name="requested_poi_quantity" type="integer"/>
+    </element>
+</database>

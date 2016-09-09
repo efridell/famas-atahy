@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>customer.customer_status</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-08-22 06:07:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>943f3d8767112200d412302027415ad0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>customer.customer_status</sys_name>
+        <sys_package display_value="Y Hata POC" source="sn_y_hata_poc">d5b4604367112200d412302027415a19</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Y Hata POC">d5b4604367112200d412302027415a19</sys_scope>
+        <sys_update_name>sys_ui_policy_action_943f3d8767112200d412302027415ad0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-08-22 06:07:41</sys_updated_on>
+        <table>sn_y_hata_poc_samafs</table>
+        <ui_policy display_value="Set Customer Number and Status Read Only">82fe3d8767112200d412302027415a13</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

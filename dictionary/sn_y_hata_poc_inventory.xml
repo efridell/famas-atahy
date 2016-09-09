@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Inventory" max_length="40" name="sn_y_hata_poc_inventory" type="collection">
+        <element label="Brand" max_length="128" name="brand" type="string"/>
+        <element label="Current Stock" max_length="40" name="current_stock" type="integer"/>
+        <element label="Description" max_length="128" name="description" type="string"/>
+        <element label="Manufacturer Item #" max_length="128" name="manufacturer_item" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Y Hata Item #" max_length="40" name="number" type="string"/>
+        <element label="Pack/Size" max_length="40" name="pack_size" type="integer"/>
+        <element label="Sales Cost/RSS Net Cost" max_length="40" name="sales_cost_rss_net_cost" type="currency"/>
+        <element label="Sell Price" max_length="40" name="sell_price" type="currency"/>
+    </element>
+</database>

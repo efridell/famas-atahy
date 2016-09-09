@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Customer Service Reps" max_length="40" name="sn_y_hata_poc_customer_service_reps" type="collection">
+        <element display="true" label="CSR" max_length="32" name="csr" reference="sys_user" reference_qual="roles=sn_y_hata_poc.CSR^EQ" reference_qual_condition="roles=sn_y_hata_poc.CSR^EQ" type="reference"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="CSR #" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="csr"/>
+        </index>
+    </element>
+</database>

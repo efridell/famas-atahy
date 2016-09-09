@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>poi_for_review</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-08-22 21:21:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b760115b67112200d412302027415a21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>poi_for_review</sys_name>
+        <sys_package display_value="Y Hata POC" source="sn_y_hata_poc">d5b4604367112200d412302027415a19</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Y Hata POC">d5b4604367112200d412302027415a19</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b760115b67112200d412302027415a21</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-08-22 21:21:56</sys_updated_on>
+        <table>sn_y_hata_poc_samafs</table>
+        <ui_policy display_value="Set Addtional Fields Read Only">f6eec91b67112200d412302027415a2e</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>
